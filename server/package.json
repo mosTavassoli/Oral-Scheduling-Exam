@@ -1,14 +1,22 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Car Rental REST API server",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
-  "author": "Web Applications I",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.0.0"
   }
 }
