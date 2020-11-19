@@ -119,10 +119,6 @@
 
 # Teachers
 
-- USERNAME , PASSWORD
-- 1000 , 123456
-- 1001 , 123456
-
 # Students
 
 - USERNAME, COURSES
