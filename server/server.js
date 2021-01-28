@@ -1,5 +1,6 @@
 //import express
 const express = require("express");
+const path = require("path");
 const morgan = require("morgan"); // logging middleware
 const jwt = require("express-jwt");
 const cookieParser = require("cookie-parser");
@@ -12,6 +13,10 @@ const authErrorObj = {
 //create application
 const app = express();
 const port = 3001;
+app.use(express.static(path.join(__dirname, "build"))); // deployment
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+}); // deployment
 
 // Set-up logging
 app.use(morgan("tiny"));
